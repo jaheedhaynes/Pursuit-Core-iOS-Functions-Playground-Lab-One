@@ -14,10 +14,15 @@ let testCasesOne: [(Double, Double)] = [
     (input: 99, expectedOutput: 198)
 ]
 
-//for (input, expectedOutput) in testCasesOne {
-//    let output = double(input)
-//    assert(output == expectedOutput, "Was expecting \(expectedOutput) for input \(input), but got \(output)")
-//}
+func double(_ num: Double) -> Double {
+    let result = (num * 2)
+    return result
+}
+
+for (input, expectedOutput) in testCasesOne {
+   let output = double(input)
+    assert(output == expectedOutput, "Was expecting \(expectedOutput) for input \(input), but got \(output)")
+}
 
 
 
@@ -94,4 +99,5 @@ let testCasesFive: [([Int?], [Int])] = [
 //    let output = removeNils(from: input)
 //    assert(output == expectedOutput, "Was expecting \(expectedOutput) for input \(input), but got \(output)")
 //}
+
 
