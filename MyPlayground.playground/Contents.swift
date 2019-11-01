@@ -39,6 +39,14 @@ let testCasesTwo: [(Double, Double, Double)] = [
     (inputOne: 2.3, inputTwo: 2.03, expectedOutput: 2.03)
 ]
 
+func smallest(of inputOne: Double, and inputTwo: Double) -> Double {
+    if inputOne > inputTwo {
+        return inputTwo
+    } else {
+        return inputOne
+    }
+}
+
 //for (inputOne, inputTwo, expectedOutput) in testCasesTwo {
 //    let output = smallest(of: inputOne, and: inputTwo)
 //    assert(output == expectedOutput, "Was expecting \(expectedOutput) for inputs \(inputOne) and \(inputTwo) but got \(output)")
@@ -56,6 +64,7 @@ let testCasesThree: [([Double], Double)] = [
     (input: [0,0,0,0,0,0,0,0,0,0], expectedOutput: 0),
     (input: [-4,-59,-348,-34,-4], expectedOutput: -348),
 ]
+
 
 //for (input, expectedOutput) in testCasesThree {
 //    let output = smallestValue(in: input)
